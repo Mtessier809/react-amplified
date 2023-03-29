@@ -1,0 +1,51 @@
+.lang {
+  flex-direction: column;
+  align-items: center;
+  top: 23px;
+  position: absolute;
+}
+
+.lang .dropdown {
+  left: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lang:hover .dropdown {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.lang:hover .dropdown li {
+  margin: 0;
+  display: block;
+  padding: 10px 0;
+}
+
+.lang:hover .dropdown div:hover {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(163, 160, 160);
+}
+
+.en {
+  background-image: url(flags/united-kingdom.png);
+  width: 40px;
+  height: 40px;
+}
+
+.fr {
+  background-image: url(flags/france.png);
+  width: 40px;
+  height: 40px;
+}
+
+.es {
+  background-image: url(flags/spain.png);
+  width: 40px;
+  height: 40px;
+}

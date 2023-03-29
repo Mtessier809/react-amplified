@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useTranslation, Trans } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 function App() {
   const { t } = useTranslation();
   return (
@@ -21,6 +22,7 @@ function App() {
           {t("learn")}
         </a>
       </header>
+      <LanguageSwitcher />
     </div>
   );
 }
