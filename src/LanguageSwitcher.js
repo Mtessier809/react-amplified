@@ -1,12 +1,12 @@
-import PropTypes from 'prop-types';
-import './LanguageSwitcher.css';
-import { useTranslation } from 'react-i18next';
-import React from 'react';
+import PropTypes from "prop-types";
+import "./LanguageSwitcher.css";
+import { useTranslation } from "react-i18next";
+import React from "react";
 
 const languages = [
-  { code: 'en', name: 'English' },
-  { code: 'fr', name: 'French' },
-  { code: 'es', name: 'Español' },
+  { code: "en", name: "English" },
+  { code: "fr", name: "French" },
+  { code: "es", name: "Español" },
 ];
 
 const LanguageSwitcher = () => {
@@ -18,7 +18,7 @@ const LanguageSwitcher = () => {
   return (
     <div>
       <LanguageSwitcherSelector
-        lang={i18n.language}
+        lang={i18n.resolvedLanguage}
         handleChangeLanguage={changeLanguageHandler}
       />
     </div>
