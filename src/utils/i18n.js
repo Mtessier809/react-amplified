@@ -1,10 +1,15 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-http-backend";
 
-i18next.use(initReactI18next).use(Backend).init({
-  load: "languageOnly",
-  debug: true,
-  lng: "en",
-  fallbackLng: "en",
-});
+i18next
+  .use(initReactI18next)
+  .use(Backend)
+  .use(LanguageDetector)
+  .init({
+    load: "languageOnly",
+    debug: true,
+    supportedLngs: ["en", "es", "fr"],
+    fallbackLng: "en",
+  });
